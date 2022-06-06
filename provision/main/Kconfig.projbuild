@@ -1,0 +1,68 @@
+menu "Provisioning data"
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default ""
+        help
+            SSID (network name) for the example to connect to.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default ""
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+    config MQTT_URI
+        string "MQTT Server URI"
+        default "mqtts://server:port"
+        help
+            MQTT server location.
+
+    config MQTT_USERNAME
+        string "MQTT username"
+        default ""
+        help
+            MQTT username.
+
+    config MQTT_PASSWORD
+        string "MQTT password"
+        default ""
+        help
+            MQTT password.
+
+    config FIRMWARE_URL_PATTERN
+        string "Firmware URL pattern"
+        default ""
+        help
+            Where to download a specific version of the firmware. Complete URL. Must include "%s".
+
+    config PANEL_SENSOR_ADDR
+        string "1-wire address of the panel sensor"
+        default ""
+        help
+            1-wire address of the panel sensor.
+
+    config STORE_LOWER_SENSOR_ADDR
+        string "1-wire address of the store lower sensor"
+        default ""
+        help
+            1-wire address of the store lower sensor.
+
+    config STORE_HIGHER_SENSOR_ADDR
+        string "1-wire address of the store higher sensor"
+        default ""
+        help
+            1-wire address of the store higher sensor.
+
+    config FLOOR_HEATING_SENSOR_ADDR
+        string "1-wire address of the floor heating sensor"
+        default ""
+        help
+            1-wire address of the floor heating sensor.
+endmenu

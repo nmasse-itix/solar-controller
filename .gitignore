@@ -1,0 +1,7 @@
+build
+sdkconfig
+sdkconfig.old
+
+# Used during development to test OTA
+# See https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/system.html
+version.txt
