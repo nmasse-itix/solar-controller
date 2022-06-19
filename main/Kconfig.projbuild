@@ -12,7 +12,7 @@ menu "Solar controller configuration"
     config SC_SAMPLE_PERIOD
         int "Number of seconds between readings."
         range 1 3600
-        default 1
+        default 30
         help
             Number of seconds between readings.
 
